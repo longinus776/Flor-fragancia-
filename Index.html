@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'eau de Michela | Tienda Oficial</title>
+    <style>
+        :root {
+            --primary-pink: #c25d7c;
+            --dark-text: #1d1d1f;
+            --light-bg: #fdfafb;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+        }
+
+        .phone-container {
+            width: 100%;
+            max-width: 414px; /* Simula el ancho de un iPhone */
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+        }
+
+        /* Barra de navegación superior simulada */
+        .nav-bar {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 5px;
+            font-size: 13px;
+            font-weight: 600;
+            border-bottom: 1px solid #eee;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .nav-item { color: #333; text-decoration: none; }
+        .active { border-bottom: 2px solid var(--primary-pink); }
+
+        .product-image {
+            width: 100%;
+            display: block;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin: 0 0 5px 0;
+            color: var(--dark-text);
+        }
+
+        .reference {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        .brand {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 26px;
+            font-weight: bold;
+            color: var(--dark-text);
+            margin: 20px 0;
+        }
+
+        /* Selectores de tamaño */
+        .size-selector {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .size-btn {
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background: white;
+            cursor: pointer;
+            flex: 1;
+            text-align: center;
+        }
+
+        .size-btn.selected {
+            border: 2px solid black;
+            font-weight: bold;
+        }
+
+        .qty-selector {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: fit-content;
+        }
+
+        .buy-button {
+            display: block;
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="phone-container">
+    <div class="nav-bar">
+        <span class="nav-item active">Exclusivo Online</span>
+        <span class="nav-item">💐 Madres</span>
+        <span class="nav-item">⚽ FanZone'26</span>
+    </div>
+
+    <img src="86121.png" alt="L'eau de Michela" class="product-image">
+    
+    <div class="content">
+        <h1>L'eau de Michela</h1>
+        <div class="reference">Referencia: 104844572</div>
+        <div class="brand">Marca: <span style="color: black;">Florcita</span></div>
+        
+        <p style="color: #666; font-size: 14px;">Contenido ml</p>
+        <div class="size-selector">
+            <div class="size-btn">50ml</div>
+            <div class="size-btn">100ml</div>
+            <div class="size-btn selected">150ml</div>
+        </div>
+
+        <div class="price">$248.00</div>
+        
+        <div class="qty-selector">
+            1 ⌵
+        </div>
+
+        <a href="#" class="buy-button">Añadir a la bolsa</a>
+        
+        <p style="text-align: center; color: #888; font-size: 12px; margin-top: 20px;">
+            Cargando comentarios... <span style="text-decoration: underline;">Agregar comentario</span>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
